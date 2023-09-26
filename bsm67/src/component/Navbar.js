@@ -47,6 +47,11 @@ const Navbar = () => {
                 Hook1
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="customerList">
+                Customer List
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

@@ -9,29 +9,31 @@ class Customer extends Component {
       customers: [],
     };
   }
+
   componentDidMount() {
     this.loadEmployeeList();
   }
-  loadEmployeeList = () => {
-    ApiService.fetchUsers().then((res) => {
-      this.setState({ customers: res.data });
+  loadEmployeeList() {
+    ApiService.fetchUsers().then((response) => {
+      this.setState({ customers: response.data });
     });
-  };
+  }
+
   render() {
     return (
       <div>
-        <h2 className="text-center">Customer Details</h2>
-        <Link class="nav-link" to="/add-customer">
+        <h2 className="text-center"> Customer Details</h2>
+        <Link class="nav-link" to="/adduser">
           Add Customer
         </Link>
         <table className="table table-striped">
           <thead>
             <tr>
-              <th>Id</th>
+              <th>ID</th>
               <th>Name</th>
               <th>UserName</th>
               <th>Email</th>
-              <th>Actions</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -53,4 +55,5 @@ class Customer extends Component {
     );
   }
 }
+
 export default Customer;

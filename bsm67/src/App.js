@@ -14,6 +14,7 @@ import DataFetch from "./DataFetch";
 import Message from "./component/Message";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
+import Customer from "./component/ApiCall/Customer";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Route exact path="/message" element={<Message />} />
         <Route exact path="/counter" element={<Counter />} />
         <Route exact path="/hook" element={<HookCounterOne />} />
+        <Route exact path="/customerList" element={<Customer />} />
       </Routes>
     </div>
   );
