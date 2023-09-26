@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 import Hello from "./component/Hello";
+import Counter from "./component/Counter";
 import Form from "./component/Form";
 import ClickCounterTwo from "./component/ClickCounterTwo";
 import Counter1 from "./component/Counter1";
@@ -12,6 +13,7 @@ import HookCounterOne from "./component/HookCounterOne";
 import DataFetch from "./DataFetch";
 import Message from "./component/Message";
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./component/Navbar";
 
 function App() {
   return (
@@ -40,10 +42,11 @@ function App() {
       {/* <ClassCounterOne />
       <HookCounterOne /> */}
       {/* <DataFetch /> */}
+      <Navbar />
       <Routes>
         <Route exact path="/" element={<Hello />} />
         <Route exact path="/message" element={<Message />} />
-        <Route exact path="/counter" element={<Counter1 />} />
+        <Route exact path="/counter" element={<Counter />} />
         <Route exact path="/hookcounter" element={<HookCounterOne />} />
       </Routes>
     </div>
