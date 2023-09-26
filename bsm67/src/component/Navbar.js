@@ -33,7 +33,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/message">
+              <Link class="nav-link" to="message">
                 Message
               </Link>
             </li>
@@ -43,8 +43,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/hookcounter">
-                Hook Counter
+              <Link class="nav-link" to="hook">
+                Hook1
               </Link>
             </li>
           </ul>

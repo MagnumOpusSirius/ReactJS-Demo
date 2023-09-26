@@ -47,7 +47,7 @@ function App() {
         <Route exact path="/" element={<Hello />} />
         <Route exact path="/message" element={<Message />} />
         <Route exact path="/counter" element={<Counter />} />
-        <Route exact path="/hookcounter" element={<HookCounterOne />} />
+        <Route exact path="/hook" element={<HookCounterOne />} />
       </Routes>
     </div>
   );
