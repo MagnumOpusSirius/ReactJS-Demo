@@ -15,7 +15,9 @@ import Message from "./component/Message";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import Customer from "./component/ApiCall/Customer";
-
+import AddUser from "./component/User/AddUser";
+import EditUser from "./component/User/EditUser";
+import ListUser from "./component/User/ListUser";
 function App() {
   return (
     <div className="App">
@@ -50,6 +52,9 @@ function App() {
         <Route exact path="/counter" element={<Counter />} />
         <Route exact path="/hook" element={<HookCounterOne />} />
         <Route exact path="/customerList" element={<Customer />} />
+        <Route exact path="/adduser" element={<AddUser />} />
+        <Route exact path="/listuser" element={<ListUser />} />
+        <Route exact path="/listuser" element={<EditUser />} />
       </Routes>
     </div>
   );

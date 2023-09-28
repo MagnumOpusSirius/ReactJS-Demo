@@ -52,6 +52,16 @@ const Navbar = () => {
                 Customer List
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="adduser">
+                Add User
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="listuser">
+                List User
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
